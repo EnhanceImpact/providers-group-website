@@ -1,0 +1,19 @@
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Supabase local secrets
+supabase/.env
+supabase/.env.*
+
+# Private downloadable resources
+supabase/storage-upload/
+
+# Dependencies
+node_modules/
+
+# Editor / OS files
+.vscode/
+.DS_Store
+Thumbs.db

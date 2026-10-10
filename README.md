@@ -10,3 +10,16 @@ Open `index.html` in VS Code with Live Server. Each page contains editable HTML.
 
 ## Before publishing
 Connect contact and newsletter forms to a secure form provider and donations to a verified payment processor. Verify contact details, social links and medical content. Video playback and thumbnail require internet access.
+
+
+## Brand refresh
+Navigation pink #E31855, primary blue #458FCE, accent gold #F99F20 sampled from the supplied logo. The real logo is at assets/providers-group-logo.png. External website links open in new tabs with rel="noopener noreferrer". Internal links stay in the same tab. The homepage retains its light transparent-black photo overlay.
+
+## Refined brand update
+The header is white to keep the original multicolor logo distinct. Blue remains the primary color, gold is an accent, and pink appears on button hover and active navigation underlines. Keyboard focus uses a gold outline. The homepage's subtle transparent-black photographic overlay remains unchanged.
+
+### Gold accent refinement
+Section eyebrow labels, decorative card symbols, and card-link underlines now use the logo's gold (`#F99F20`). All other styling and content are unchanged.
+
+## Supabase-connected version
+This package now includes a client-owned Supabase backend, gated Kidney Health Tracker delivery, and a staff admin dashboard. See `README-SUPABASE.md` for deployment steps.
