@@ -1,0 +1,725 @@
+-- Run AFTER 002_blog_rotation.sql. Populates the 60 draft slots; no article is approved automatically.
+
+begin;
+
+update public.blog_articles set title = 'What Your Kidneys Do Every Day', slug = 'what-your-kidneys-do-every-day', excerpt = 'Your kidneys filter wastes and extra fluid, help regulate blood pressure, and support several important body functions.', content = 'Your kidneys filter wastes and extra fluid, help regulate blood pressure, and support several important body functions. Kidney health is more than a single laboratory number. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Ask your care team which kidney-health checks are appropriate for you.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: CDC: Chronic Kidney Disease Basics — https://www.cdc.gov/kidney-disease/about/index.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 1 and status = 'draft';
+
+update public.blog_articles set title = 'Why Kidney Disease Can Go Unnoticed', slug = 'why-kidney-disease-can-go-unnoticed', excerpt = 'Early chronic kidney disease often has no noticeable symptoms; blood and urine testing can reveal concerns earlier.', content = 'Early chronic kidney disease often has no noticeable symptoms; blood and urine testing can reveal concerns earlier. Feeling well does not always tell the full story about kidney function. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Ask whether your personal risk factors warrant kidney testing.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: NIDDK: Chronic Kidney Disease Tests & Diagnosis — https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 2 and status = 'draft';
+
+update public.blog_articles set title = 'Understanding eGFR Without the Jargon', slug = 'understanding-egfr-without-the-jargon', excerpt = 'Estimated glomerular filtration rate, or eGFR, is a calculated estimate of how well kidneys filter blood.', content = 'Estimated glomerular filtration rate, or eGFR, is a calculated estimate of how well kidneys filter blood. One result should be interpreted alongside your history and other tests. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Keep dated copies of eGFR results and discuss trends with your clinician.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: NIDDK: Chronic Kidney Disease Tests & Diagnosis — https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 3 and status = 'draft';
+
+update public.blog_articles set title = 'What a UACR Urine Test Can Tell You', slug = 'what-a-uacr-urine-test-can-tell-you', excerpt = 'The urine albumin-to-creatinine ratio checks for albumin, a protein that can appear in urine when kidney filters are damaged.', content = 'The urine albumin-to-creatinine ratio checks for albumin, a protein that can appear in urine when kidney filters are damaged. A urine test can add information that a blood test alone may miss. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Ask whether a UACR test belongs in your routine care.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: NIDDK: Chronic Kidney Disease Tests & Diagnosis — https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 4 and status = 'draft';
+
+update public.blog_articles set title = 'Blood Pressure and Your Kidneys', slug = 'blood-pressure-and-your-kidneys', excerpt = 'High blood pressure can damage kidney blood vessels, while kidney problems can make blood pressure harder to manage.', content = 'High blood pressure can damage kidney blood vessels, while kidney problems can make blood pressure harder to manage. Blood pressure and kidney health influence each other. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Record readings as directed and bring the log to your next appointment.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: CDC: Risk Factors for Chronic Kidney Disease — https://www.cdc.gov/kidney-disease/risk-factors/index.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 5 and status = 'draft';
+
+update public.blog_articles set title = 'Diabetes and Kidney Health', slug = 'diabetes-and-kidney-health', excerpt = 'Over time, high blood sugar can damage the tiny blood vessels and filtering units in the kidneys.', content = 'Over time, high blood sugar can damage the tiny blood vessels and filtering units in the kidneys. Routine monitoring matters even when you feel fine. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Ask your diabetes care team about kidney screening and individualized glucose goals.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: CDC: Risk Factors for Chronic Kidney Disease — https://www.cdc.gov/kidney-disease/risk-factors/index.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 6 and status = 'draft';
+
+update public.blog_articles set title = 'Family History: A Reason to Ask Questions', slug = 'family-history-a-reason-to-ask-questions', excerpt = 'A family history of kidney failure can increase your risk, making a conversation with your clinician worthwhile.', content = 'A family history of kidney failure can increase your risk, making a conversation with your clinician worthwhile. Family history is information for a care conversation, not a diagnosis. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Write down what you know about kidney conditions in close relatives.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: CDC: Risk Factors for Chronic Kidney Disease — https://www.cdc.gov/kidney-disease/risk-factors/index.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 7 and status = 'draft';
+
+update public.blog_articles set title = 'What Creatinine Means on a Lab Report', slug = 'what-creatinine-means-on-a-lab-report', excerpt = 'Creatinine is a waste product measured in blood and used in calculations that estimate kidney filtration.', content = 'Creatinine is a waste product measured in blood and used in calculations that estimate kidney filtration. Creatinine alone does not provide a complete picture of kidney function. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Ask your clinician how creatinine relates to your eGFR and overall health.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: NIDDK: Chronic Kidney Disease Tests & Diagnosis — https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 8 and status = 'draft';
+
+update public.blog_articles set title = 'Preparing for a Kidney Health Appointment', slug = 'preparing-for-a-kidney-health-appointment', excerpt = 'A useful appointment begins with a list of medicines, questions, symptoms, and recent test results.', content = 'A useful appointment begins with a list of medicines, questions, symptoms, and recent test results. Preparation can make limited appointment time more productive. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Bring a concise health summary and ask what follow-up is needed.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: The Providers Group: Give Life Kidney Health Tracker — resources.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 9 and status = 'draft';
+
+update public.blog_articles set title = 'Tracking Health Numbers Over 90 Days', slug = 'tracking-health-numbers-over-90-days', excerpt = 'A dated record of blood pressure, glucose, laboratory tests, and questions can help you discuss patterns with your care team.', content = 'A dated record of blood pressure, glucose, laboratory tests, and questions can help you discuss patterns with your care team. A tracker is a conversation tool, not a way to diagnose yourself. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Try the Give Life Kidney Health Tracker for your next 90 days.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: The Providers Group: Give Life Kidney Health Tracker — resources.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 10 and status = 'draft';
+
+update public.blog_articles set title = 'When to Ask About a Kidney Specialist', slug = 'when-to-ask-about-a-kidney-specialist', excerpt = 'A nephrologist specializes in kidney care; your primary clinician can advise whether a referral is appropriate.', content = 'A nephrologist specializes in kidney care; your primary clinician can advise whether a referral is appropriate. Knowing when to ask for help can reduce uncertainty. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Ask what findings or changes would make specialist care useful.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: NIDDK: Managing Chronic Kidney Disease — https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/kidney-disease/identify-manage-patients/manage-ckd
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 11 and status = 'draft';
+
+update public.blog_articles set title = 'Medicines, Supplements, and Kidney Questions', slug = 'medicines-supplements-and-kidney-questions', excerpt = 'Prescription medicines, over-the-counter products, and supplements all belong on the list you share with your care team.', content = 'Prescription medicines, over-the-counter products, and supplements all belong on the list you share with your care team. Never stop or change prescribed treatment based on a blog post. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Review your full medication list with a clinician or pharmacist before making changes.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: NIDDK: Managing Chronic Kidney Disease — https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/kidney-disease/identify-manage-patients/manage-ckd
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 12 and status = 'draft';
+
+update public.blog_articles set title = 'Why Repeat Testing Sometimes Matters', slug = 'why-repeat-testing-sometimes-matters', excerpt = 'Clinicians may repeat kidney-related tests because temporary changes and longer-term patterns mean different things.', content = 'Clinicians may repeat kidney-related tests because temporary changes and longer-term patterns mean different things. Chronic kidney disease is generally assessed using persistent findings over time. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Ask when a repeat test is recommended and what it will clarify.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: NIDDK: Chronic Kidney Disease Tests & Diagnosis — https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 13 and status = 'draft';
+
+update public.blog_articles set title = 'Heart Health and Kidney Health Are Connected', slug = 'heart-health-and-kidney-health-are-connected', excerpt = 'Heart disease and kidney disease share risk factors, including high blood pressure and diabetes.', content = 'Heart disease and kidney disease share risk factors, including high blood pressure and diabetes. Looking at the whole person supports better care conversations. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Discuss cardiovascular and kidney risks together at your next checkup.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: CDC: Risk Factors for Chronic Kidney Disease — https://www.cdc.gov/kidney-disease/risk-factors/index.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 14 and status = 'draft';
+
+update public.blog_articles set title = 'Five Questions to Ask About Kidney Screening', slug = 'five-questions-to-ask-about-kidney-screening', excerpt = 'Understanding your risk, the tests used, and the next steps can make screening less confusing.', content = 'Understanding your risk, the tests used, and the next steps can make screening less confusing. Good questions are often the first step toward informed action. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Kidney health can be difficult to judge by symptoms alone. Clinicians may consider personal history, blood pressure, diabetes, blood tests such as eGFR, and urine tests such as UACR. Which tests matter, how often to repeat them, and what the results mean depend on the individual. If a result concerns you, ask the professional who ordered it to explain the finding in context.
+
+One step you can take this week: Ask about eGFR, UACR, how often to test, what results mean, and when to follow up.
+
+The Give Life Kidney Health Tracker offers a place to record results, appointments, medicines, and questions over 90 days. A record is most helpful when you review it with your care team rather than interpreting numbers on your own.
+
+Learn more: NIDDK: Chronic Kidney Disease Tests & Diagnosis — https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Kidney Health & Prevention', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 15 and status = 'draft';
+
+update public.blog_articles set title = 'What Does Organ Donation Mean?', slug = 'what-does-organ-donation-mean', excerpt = 'Organ donation can make transplantation possible for people with organ failure; the process is guided by medical and legal safeguards.', content = 'Organ donation can make transplantation possible for people with organ failure; the process is guided by medical and legal safeguards. Clear information helps replace assumptions with understanding. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Learn the basics from an official donation resource before making a decision.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 16 and status = 'draft';
+
+update public.blog_articles set title = 'Organ, Eye, and Tissue Donation: The Differences', slug = 'organ-eye-and-tissue-donation-the-differences', excerpt = 'Organ, eye, and tissue donation can help recipients in different ways, and eligibility is assessed individually.', content = 'Organ, eye, and tissue donation can help recipients in different ways, and eligibility is assessed individually. Donation is broader than many people realize. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Explore the different kinds of donation and discuss your wishes with family.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 17 and status = 'draft';
+
+update public.blog_articles set title = 'How to Register as an Organ Donor', slug = 'how-to-register-as-an-organ-donor', excerpt = 'Registration options vary by state and may include motor vehicle agencies and official online registries.', content = 'Registration options vary by state and may include motor vehicle agencies and official online registries. Registration makes your decision easier to document and communicate. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Find your state''s official donor registration process.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 18 and status = 'draft';
+
+update public.blog_articles set title = 'Why Talking With Family About Donation Matters', slug = 'why-talking-with-family-about-donation-matters', excerpt = 'Families may face difficult conversations during stressful moments; sharing your wishes beforehand can provide clarity.', content = 'Families may face difficult conversations during stressful moments; sharing your wishes beforehand can provide clarity. A short conversation today can prevent uncertainty later. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Choose a calm time to tell loved ones what you have decided and why.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 19 and status = 'draft';
+
+update public.blog_articles set title = 'Questions to Ask Before Registering', slug = 'questions-to-ask-before-registering', excerpt = 'It is reasonable to ask how registration works, what it means, and how decisions are honored.', content = 'It is reasonable to ask how registration works, what it means, and how decisions are honored. Informed decisions begin with trustworthy answers. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Write down questions and consult an official donation organization.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 20 and status = 'draft';
+
+update public.blog_articles set title = 'Living Kidney Donation: An Introduction', slug = 'living-kidney-donation-an-introduction', excerpt = 'Some people may be able to donate one kidney while alive after a thorough medical and psychosocial evaluation.', content = 'Some people may be able to donate one kidney while alive after a thorough medical and psychosocial evaluation. Living donation is a significant personal medical decision. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Learn about evaluation, risks, recovery, and long-term follow-up from a transplant center.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 21 and status = 'draft';
+
+update public.blog_articles set title = 'What Happens During a Transplant Evaluation?', slug = 'what-happens-during-a-transplant-evaluation', excerpt = 'Transplant programs assess medical needs and other factors to determine whether transplantation is an appropriate option.', content = 'Transplant programs assess medical needs and other factors to determine whether transplantation is an appropriate option. The process is individualized; no article can determine eligibility. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Ask a transplant team how evaluation and referral work for a specific patient.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 22 and status = 'draft';
+
+update public.blog_articles set title = 'Understanding the Transplant Waiting List', slug = 'understanding-the-transplant-waiting-list', excerpt = 'Waiting-list decisions depend on clinical and allocation rules that vary by organ and can change over time.', content = 'Waiting-list decisions depend on clinical and allocation rules that vary by organ and can change over time. There is no single universal waiting-list experience. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Use official transplant program and OPTN information for current rules.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 23 and status = 'draft';
+
+update public.blog_articles set title = 'Donation Myths: How to Check a Claim', slug = 'donation-myths-how-to-check-a-claim', excerpt = 'Donation rumors spread easily online, especially when they involve fears about medical care or fairness.', content = 'Donation rumors spread easily online, especially when they involve fears about medical care or fairness. Trust grows when questions are welcomed and answered carefully. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Check claims against official donor education resources rather than social posts.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 24 and status = 'draft';
+
+update public.blog_articles set title = 'The Role of Transplant Teams', slug = 'the-role-of-transplant-teams', excerpt = 'Transplant care involves coordinated work by physicians, nurses, social workers, coordinators, and other specialists.', content = 'Transplant care involves coordinated work by physicians, nurses, social workers, coordinators, and other specialists. Understanding roles can make a complex process easier to navigate. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Ask your care team who handles referrals, education, and follow-up questions.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 25 and status = 'draft';
+
+update public.blog_articles set title = 'Respecting Different Donation Decisions', slug = 'respecting-different-donation-decisions', excerpt = 'People bring different cultural, family, personal, and spiritual perspectives to donation.', content = 'People bring different cultural, family, personal, and spiritual perspectives to donation. Education should support informed choice, not coercion. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Listen respectfully and share reliable information without pressure.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 26 and status = 'draft';
+
+update public.blog_articles set title = 'Kidney Failure, Dialysis, and Transplant Options', slug = 'kidney-failure-dialysis-and-transplant-options', excerpt = 'Kidney failure may require treatments such as dialysis or transplantation, depending on individual circumstances.', content = 'Kidney failure may require treatments such as dialysis or transplantation, depending on individual circumstances. Treatment decisions deserve individualized medical guidance. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Discuss available treatment choices with a qualified kidney-care team.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 27 and status = 'draft';
+
+update public.blog_articles set title = 'How Community Education Supports Donation Awareness', slug = 'how-community-education-supports-donation-awareness', excerpt = 'Trusted community settings can provide space for people to ask questions about donation.', content = 'Trusted community settings can provide space for people to ask questions about donation. Access to clear information can support meaningful conversations. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Invite a qualified educator to a school, faith group, or community gathering.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 28 and status = 'draft';
+
+update public.blog_articles set title = 'Finding Reliable Organ Donation Information', slug = 'finding-reliable-organ-donation-information', excerpt = 'Official sources explain registration, donation types, and the transplant system more reliably than viral posts.', content = 'Official sources explain registration, donation types, and the transplant system more reliably than viral posts. Good information is worth passing along. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Bookmark a trusted donation resource and share it with someone who asks.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 29 and status = 'draft';
+
+update public.blog_articles set title = 'A Family Conversation About Donation Wishes', slug = 'a-family-conversation-about-donation-wishes', excerpt = 'Discussing donation is easier when people focus on values and listen without judgment.', content = 'Discussing donation is easier when people focus on values and listen without judgment. The goal is understanding, not winning an argument. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Organ donation and transplantation involve personal choices, clinical evaluations, and established procedures. Details may differ depending on the organ, the person, and the state or transplant program. For that reason, official donor registries and transplant organizations are better sources than anecdotes or viral claims. It is appropriate to ask questions before deciding what is right for you.
+
+One step you can take this week: Ask loved ones what they know, what concerns them, and whether they want more information.
+
+Conversations about donation should be voluntary and respectful. People may have different beliefs or concerns. Listening carefully, checking reliable sources, and making your wishes known can be more helpful than trying to persuade someone on the spot.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Organ Donation & Transplant Awareness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 30 and status = 'draft';
+
+update public.blog_articles set title = 'Small Habits That Support Long-Term Health', slug = 'small-habits-that-support-long-term-health', excerpt = 'Consistent routines for movement, sleep, nutrition, and follow-up care can support overall well-being.', content = 'Consistent routines for movement, sleep, nutrition, and follow-up care can support overall well-being. Sustainable change often begins with small steps. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+A sustainable health routine should fit a person’s abilities, schedule, and medical needs. General wellness advice is not a substitute for an individualized plan, especially for someone managing kidney disease or another chronic condition. Small habits can support useful conversations when they are recorded and discussed with a qualified professional.
+
+One step you can take this week: Choose one manageable habit to discuss or try this week.
+
+Consider what would make this habit easier to maintain: a reminder, a short written log, or help from someone you trust. If a change affects your medicines, diet, or activity restrictions, check with your care team before acting.
+
+Learn more: CDC: Chronic Kidney Disease Basics — https://www.cdc.gov/kidney-disease/about/index.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Healthy Living & Wellness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 31 and status = 'draft';
+
+update public.blog_articles set title = 'Building a Blood Pressure Tracking Routine', slug = 'building-a-blood-pressure-tracking-routine', excerpt = 'A repeatable approach to measuring and recording blood pressure can help your care team interpret readings.', content = 'A repeatable approach to measuring and recording blood pressure can help your care team interpret readings. Consistency matters more than collecting numbers without context. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+A sustainable health routine should fit a person’s abilities, schedule, and medical needs. General wellness advice is not a substitute for an individualized plan, especially for someone managing kidney disease or another chronic condition. Small habits can support useful conversations when they are recorded and discussed with a qualified professional.
+
+One step you can take this week: Ask your clinician how and when to measure, then record dates and results.
+
+Consider what would make this habit easier to maintain: a reminder, a short written log, or help from someone you trust. If a change affects your medicines, diet, or activity restrictions, check with your care team before acting.
+
+Learn more: CDC: Risk Factors for Chronic Kidney Disease — https://www.cdc.gov/kidney-disease/risk-factors/index.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Healthy Living & Wellness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 32 and status = 'draft';
+
+update public.blog_articles set title = 'Making the Most of a Health Journal', slug = 'making-the-most-of-a-health-journal', excerpt = 'A health journal can organize observations, questions, and appointments without becoming a source of anxiety.', content = 'A health journal can organize observations, questions, and appointments without becoming a source of anxiety. A journal should support care, not replace it. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+A sustainable health routine should fit a person’s abilities, schedule, and medical needs. General wellness advice is not a substitute for an individualized plan, especially for someone managing kidney disease or another chronic condition. Small habits can support useful conversations when they are recorded and discussed with a qualified professional.
+
+One step you can take this week: Record only the information your clinician recommends monitoring.
+
+Consider what would make this habit easier to maintain: a reminder, a short written log, or help from someone you trust. If a change affects your medicines, diet, or activity restrictions, check with your care team before acting.
+
+Learn more: The Providers Group: Give Life Kidney Health Tracker — resources.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Healthy Living & Wellness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 33 and status = 'draft';
+
+update public.blog_articles set title = 'Physical Activity: Start With What Is Appropriate for You', slug = 'physical-activity-start-with-what-is-appropriate-for-you', excerpt = 'Movement can support cardiovascular health, but the right activity plan depends on your health and abilities.', content = 'Movement can support cardiovascular health, but the right activity plan depends on your health and abilities. There is no single exercise routine that fits everyone. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+A sustainable health routine should fit a person’s abilities, schedule, and medical needs. General wellness advice is not a substitute for an individualized plan, especially for someone managing kidney disease or another chronic condition. Small habits can support useful conversations when they are recorded and discussed with a qualified professional.
+
+One step you can take this week: Ask a clinician what kinds of activity are safe and realistic for you.
+
+Consider what would make this habit easier to maintain: a reminder, a short written log, or help from someone you trust. If a change affects your medicines, diet, or activity restrictions, check with your care team before acting.
+
+Learn more: CDC: Chronic Kidney Disease Basics — https://www.cdc.gov/kidney-disease/about/index.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Healthy Living & Wellness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 34 and status = 'draft';
+
+update public.blog_articles set title = 'Food Choices and Kidney Health: Why Individual Advice Matters', slug = 'food-choices-and-kidney-health-why-individual-advice-matters', excerpt = 'Dietary needs can differ substantially for people with and without kidney disease and across stages of care.', content = 'Dietary needs can differ substantially for people with and without kidney disease and across stages of care. Avoid following restrictive kidney diets from social media without medical guidance. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+A sustainable health routine should fit a person’s abilities, schedule, and medical needs. General wellness advice is not a substitute for an individualized plan, especially for someone managing kidney disease or another chronic condition. Small habits can support useful conversations when they are recorded and discussed with a qualified professional.
+
+One step you can take this week: Seek personalized advice from your care team or a registered dietitian.
+
+Consider what would make this habit easier to maintain: a reminder, a short written log, or help from someone you trust. If a change affects your medicines, diet, or activity restrictions, check with your care team before acting.
+
+Learn more: NIDDK: Managing Chronic Kidney Disease — https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/kidney-disease/identify-manage-patients/manage-ckd
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Healthy Living & Wellness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 35 and status = 'draft';
+
+update public.blog_articles set title = 'Sleep and Everyday Well-Being', slug = 'sleep-and-everyday-well-being', excerpt = 'Regular sleep routines can support day-to-day functioning and broader health habits.', content = 'Regular sleep routines can support day-to-day functioning and broader health habits. Rest is one part of a larger health picture. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+A sustainable health routine should fit a person’s abilities, schedule, and medical needs. General wellness advice is not a substitute for an individualized plan, especially for someone managing kidney disease or another chronic condition. Small habits can support useful conversations when they are recorded and discussed with a qualified professional.
+
+One step you can take this week: Notice your sleep pattern and mention persistent problems to your clinician.
+
+Consider what would make this habit easier to maintain: a reminder, a short written log, or help from someone you trust. If a change affects your medicines, diet, or activity restrictions, check with your care team before acting.
+
+Learn more: CDC: Chronic Kidney Disease Basics — https://www.cdc.gov/kidney-disease/about/index.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Healthy Living & Wellness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 36 and status = 'draft';
+
+update public.blog_articles set title = 'Reducing Stress Around Medical Appointments', slug = 'reducing-stress-around-medical-appointments', excerpt = 'Writing down questions and bringing a trusted support person can make appointments feel more manageable.', content = 'Writing down questions and bringing a trusted support person can make appointments feel more manageable. You do not need to remember every detail on the spot. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+A sustainable health routine should fit a person’s abilities, schedule, and medical needs. General wellness advice is not a substitute for an individualized plan, especially for someone managing kidney disease or another chronic condition. Small habits can support useful conversations when they are recorded and discussed with a qualified professional.
+
+One step you can take this week: Prepare your top three questions before your next visit.
+
+Consider what would make this habit easier to maintain: a reminder, a short written log, or help from someone you trust. If a change affects your medicines, diet, or activity restrictions, check with your care team before acting.
+
+Learn more: The Providers Group: Give Life Kidney Health Tracker — resources.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Healthy Living & Wellness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 37 and status = 'draft';
+
+update public.blog_articles set title = 'Keeping an Accurate Medication List', slug = 'keeping-an-accurate-medication-list', excerpt = 'A current medication list helps care teams understand prescriptions, nonprescription products, and supplements.', content = 'A current medication list helps care teams understand prescriptions, nonprescription products, and supplements. Organization can help prevent avoidable confusion. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+A sustainable health routine should fit a person’s abilities, schedule, and medical needs. General wellness advice is not a substitute for an individualized plan, especially for someone managing kidney disease or another chronic condition. Small habits can support useful conversations when they are recorded and discussed with a qualified professional.
+
+One step you can take this week: Update your list after medication changes and bring it to appointments.
+
+Consider what would make this habit easier to maintain: a reminder, a short written log, or help from someone you trust. If a change affects your medicines, diet, or activity restrictions, check with your care team before acting.
+
+Learn more: NIDDK: Managing Chronic Kidney Disease — https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/kidney-disease/identify-manage-patients/manage-ckd
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Healthy Living & Wellness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 38 and status = 'draft';
+
+update public.blog_articles set title = 'Setting Realistic 30-Day Health Goals', slug = 'setting-realistic-30-day-health-goals', excerpt = 'A goal that is specific, modest, and tied to your clinician''s advice can be easier to maintain.', content = 'A goal that is specific, modest, and tied to your clinician''s advice can be easier to maintain. Progress can mean showing up consistently, not achieving perfection. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+A sustainable health routine should fit a person’s abilities, schedule, and medical needs. General wellness advice is not a substitute for an individualized plan, especially for someone managing kidney disease or another chronic condition. Small habits can support useful conversations when they are recorded and discussed with a qualified professional.
+
+One step you can take this week: Choose one tracking or follow-up goal for the next 30 days.
+
+Consider what would make this habit easier to maintain: a reminder, a short written log, or help from someone you trust. If a change affects your medicines, diet, or activity restrictions, check with your care team before acting.
+
+Learn more: The Providers Group: Give Life Kidney Health Tracker — resources.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Healthy Living & Wellness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 39 and status = 'draft';
+
+update public.blog_articles set title = 'Supporting a Loved One''s Health Journey', slug = 'supporting-a-loved-one-s-health-journey', excerpt = 'Practical support may mean offering a ride, listening, or helping organize questions for an appointment.', content = 'Practical support may mean offering a ride, listening, or helping organize questions for an appointment. Respect and choice matter as much as good intentions. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+A sustainable health routine should fit a person’s abilities, schedule, and medical needs. General wellness advice is not a substitute for an individualized plan, especially for someone managing kidney disease or another chronic condition. Small habits can support useful conversations when they are recorded and discussed with a qualified professional.
+
+One step you can take this week: Ask the person what kind of help they actually want.
+
+Consider what would make this habit easier to maintain: a reminder, a short written log, or help from someone you trust. If a change affects your medicines, diet, or activity restrictions, check with your care team before acting.
+
+Learn more: CDC: Chronic Kidney Disease Basics — https://www.cdc.gov/kidney-disease/about/index.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Healthy Living & Wellness', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 40 and status = 'draft';
+
+update public.blog_articles set title = 'How to Start a Kidney Health Conversation at Home', slug = 'how-to-start-a-kidney-health-conversation-at-home', excerpt = 'Health discussions can begin with curiosity about family history rather than fear.', content = 'Health discussions can begin with curiosity about family history rather than fear. A respectful conversation can reveal information worth sharing with a clinician. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Good family conversations make room for questions and privacy. A person may choose not to discuss their medical history or donation wishes, and that choice deserves respect. Instead of asking for every detail at once, start with one open-ended question, listen to the answer, and offer a trustworthy resource when it is welcome.
+
+One step you can take this week: Ask relatives whether kidney disease, diabetes, or high blood pressure runs in the family.
+
+When information is shared, keep it accurate and avoid drawing medical conclusions about relatives. A family-history note or list of questions can be useful to bring to a health professional, who can explain what it may mean for personal care.
+
+Learn more: CDC: Risk Factors for Chronic Kidney Disease — https://www.cdc.gov/kidney-disease/risk-factors/index.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Family Conversations & Education', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 41 and status = 'draft';
+
+update public.blog_articles set title = 'Talking With Parents About Family Health History', slug = 'talking-with-parents-about-family-health-history', excerpt = 'Older relatives may hold useful information about conditions that affected previous generations.', content = 'Older relatives may hold useful information about conditions that affected previous generations. Family health history is a starting point, not a prediction. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Good family conversations make room for questions and privacy. A person may choose not to discuss their medical history or donation wishes, and that choice deserves respect. Instead of asking for every detail at once, start with one open-ended question, listen to the answer, and offer a trustworthy resource when it is welcome.
+
+One step you can take this week: Invite stories and write down details only when people are comfortable sharing.
+
+When information is shared, keep it accurate and avoid drawing medical conclusions about relatives. A family-history note or list of questions can be useful to bring to a health professional, who can explain what it may mean for personal care.
+
+Learn more: CDC: Risk Factors for Chronic Kidney Disease — https://www.cdc.gov/kidney-disease/risk-factors/index.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Family Conversations & Education', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 42 and status = 'draft';
+
+update public.blog_articles set title = 'Helping Young Adults Ask Better Health Questions', slug = 'helping-young-adults-ask-better-health-questions', excerpt = 'Young adults can learn to understand routine tests and prepare questions before health visits.', content = 'Young adults can learn to understand routine tests and prepare questions before health visits. Health literacy is a skill people can build over time. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Good family conversations make room for questions and privacy. A person may choose not to discuss their medical history or donation wishes, and that choice deserves respect. Instead of asking for every detail at once, start with one open-ended question, listen to the answer, and offer a trustworthy resource when it is welcome.
+
+One step you can take this week: Encourage someone to ask what tests they receive and why.
+
+When information is shared, keep it accurate and avoid drawing medical conclusions about relatives. A family-history note or list of questions can be useful to bring to a health professional, who can explain what it may mean for personal care.
+
+Learn more: The Providers Group: Give Life Kidney Health Tracker — resources.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Family Conversations & Education', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 43 and status = 'draft';
+
+update public.blog_articles set title = 'What to Say When Someone Is Nervous About Testing', slug = 'what-to-say-when-someone-is-nervous-about-testing', excerpt = 'Anxiety about health testing deserves empathy rather than dismissal.', content = 'Anxiety about health testing deserves empathy rather than dismissal. Supportive listening can make it easier to seek reliable information. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Good family conversations make room for questions and privacy. A person may choose not to discuss their medical history or donation wishes, and that choice deserves respect. Instead of asking for every detail at once, start with one open-ended question, listen to the answer, and offer a trustworthy resource when it is welcome.
+
+One step you can take this week: Offer to help write questions or arrange a conversation with a professional.
+
+When information is shared, keep it accurate and avoid drawing medical conclusions about relatives. A family-history note or list of questions can be useful to bring to a health professional, who can explain what it may mean for personal care.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Family Conversations & Education', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 44 and status = 'draft';
+
+update public.blog_articles set title = 'Creating a Family Health Information Folder', slug = 'creating-a-family-health-information-folder', excerpt = 'A simple folder can hold medication lists, provider contacts, and questions for appointments.', content = 'A simple folder can hold medication lists, provider contacts, and questions for appointments. Privacy and consent are important even within families. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Good family conversations make room for questions and privacy. A person may choose not to discuss their medical history or donation wishes, and that choice deserves respect. Instead of asking for every detail at once, start with one open-ended question, listen to the answer, and offer a trustworthy resource when it is welcome.
+
+One step you can take this week: Choose a secure location and decide what information each person wants to share.
+
+When information is shared, keep it accurate and avoid drawing medical conclusions about relatives. A family-history note or list of questions can be useful to bring to a health professional, who can explain what it may mean for personal care.
+
+Learn more: The Providers Group: Give Life Kidney Health Tracker — resources.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Family Conversations & Education', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 45 and status = 'draft';
+
+update public.blog_articles set title = 'Discussing Organ Donation Across Generations', slug = 'discussing-organ-donation-across-generations', excerpt = 'Family members may hold different views shaped by experience, tradition, or faith.', content = 'Family members may hold different views shaped by experience, tradition, or faith. Mutual understanding matters more than immediate agreement. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Good family conversations make room for questions and privacy. A person may choose not to discuss their medical history or donation wishes, and that choice deserves respect. Instead of asking for every detail at once, start with one open-ended question, listen to the answer, and offer a trustworthy resource when it is welcome.
+
+One step you can take this week: Ask open-ended questions and share official information only when welcomed.
+
+When information is shared, keep it accurate and avoid drawing medical conclusions about relatives. A family-history note or list of questions can be useful to bring to a health professional, who can explain what it may mean for personal care.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Family Conversations & Education', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 46 and status = 'draft';
+
+update public.blog_articles set title = 'Teaching Children About Helping Others Through Service', slug = 'teaching-children-about-helping-others-through-service', excerpt = 'Age-appropriate conversations about service can focus on kindness, community, and helping neighbors.', content = 'Age-appropriate conversations about service can focus on kindness, community, and helping neighbors. Service can be taught without asking children to make adult medical decisions. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Good family conversations make room for questions and privacy. A person may choose not to discuss their medical history or donation wishes, and that choice deserves respect. Instead of asking for every detail at once, start with one open-ended question, listen to the answer, and offer a trustworthy resource when it is welcome.
+
+One step you can take this week: Choose a simple volunteer activity suitable for your family.
+
+When information is shared, keep it accurate and avoid drawing medical conclusions about relatives. A family-history note or list of questions can be useful to bring to a health professional, who can explain what it may mean for personal care.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Family Conversations & Education', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 47 and status = 'draft';
+
+update public.blog_articles set title = 'Five Questions for a Family Health Check-In', slug = 'five-questions-for-a-family-health-check-in', excerpt = 'A family check-in can cover history, preventive care, medication questions, trusted resources, and support needs.', content = 'A family check-in can cover history, preventive care, medication questions, trusted resources, and support needs. A check-in works best when it respects boundaries. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Good family conversations make room for questions and privacy. A person may choose not to discuss their medical history or donation wishes, and that choice deserves respect. Instead of asking for every detail at once, start with one open-ended question, listen to the answer, and offer a trustworthy resource when it is welcome.
+
+One step you can take this week: Pick a relaxed time and let everyone choose what to share.
+
+When information is shared, keep it accurate and avoid drawing medical conclusions about relatives. A family-history note or list of questions can be useful to bring to a health professional, who can explain what it may mean for personal care.
+
+Learn more: The Providers Group: Give Life Kidney Health Tracker — resources.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Family Conversations & Education', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 48 and status = 'draft';
+
+update public.blog_articles set title = 'Sharing Health Resources Without Overwhelming People', slug = 'sharing-health-resources-without-overwhelming-people', excerpt = 'A short, relevant resource may be more helpful than sending a long collection of links.', content = 'A short, relevant resource may be more helpful than sending a long collection of links. Education is an invitation, not a flood of information. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Good family conversations make room for questions and privacy. A person may choose not to discuss their medical history or donation wishes, and that choice deserves respect. Instead of asking for every detail at once, start with one open-ended question, listen to the answer, and offer a trustworthy resource when it is welcome.
+
+One step you can take this week: Share one trustworthy resource and ask whether the person wants more.
+
+When information is shared, keep it accurate and avoid drawing medical conclusions about relatives. A family-history note or list of questions can be useful to bring to a health professional, who can explain what it may mean for personal care.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Family Conversations & Education', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 49 and status = 'draft';
+
+update public.blog_articles set title = 'Making Room for Different Beliefs About Donation', slug = 'making-room-for-different-beliefs-about-donation', excerpt = 'A thoughtful conversation can acknowledge religious, cultural, and personal perspectives without assuming everyone agrees.', content = 'A thoughtful conversation can acknowledge religious, cultural, and personal perspectives without assuming everyone agrees. Respectful dialogue makes space for informed choices. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Good family conversations make room for questions and privacy. A person may choose not to discuss their medical history or donation wishes, and that choice deserves respect. Instead of asking for every detail at once, start with one open-ended question, listen to the answer, and offer a trustworthy resource when it is welcome.
+
+One step you can take this week: Invite questions and suggest speaking with trusted faith leaders or official donation educators.
+
+When information is shared, keep it accurate and avoid drawing medical conclusions about relatives. A family-history note or list of questions can be useful to bring to a health professional, who can explain what it may mean for personal care.
+
+Learn more: HRSA: Organ Donor Information — https://www.organdonor.gov/
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Family Conversations & Education', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 50 and status = 'draft';
+
+update public.blog_articles set title = 'What Community Health Education Can Accomplish', slug = 'what-community-health-education-can-accomplish', excerpt = 'Local education events can help people identify trustworthy resources and prepare questions for care teams.', content = 'Local education events can help people identify trustworthy resources and prepare questions for care teams. Education can turn confusion into constructive next steps. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Community education works best when information is accurate, participation is voluntary, and people have a clear next step. Organizers can plan accessible events, invite qualified speakers for medical questions, and make room for differing perspectives. Contact information should be collected only with a clear purpose and appropriate consent.
+
+One step you can take this week: Consider hosting a small discussion with a qualified presenter.
+
+A successful outreach effort does not have to be large. A well-run conversation, useful handout, or connection to a credible organization can help participants feel better prepared to ask questions and take informed action.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Give Life Community & Advocacy', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 51 and status = 'draft';
+
+update public.blog_articles set title = 'Hosting a Give Life Conversation in Your Community', slug = 'hosting-a-give-life-conversation-in-your-community', excerpt = 'A community conversation works best with clear goals, accessible materials, and time for questions.', content = 'A community conversation works best with clear goals, accessible materials, and time for questions. A welcoming event is more useful than a one-way lecture. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Community education works best when information is accurate, participation is voluntary, and people have a clear next step. Organizers can plan accessible events, invite qualified speakers for medical questions, and make room for differing perspectives. Contact information should be collected only with a clear purpose and appropriate consent.
+
+One step you can take this week: Identify an audience, a location, and an appropriate educational partner.
+
+A successful outreach effort does not have to be large. A well-run conversation, useful handout, or connection to a credible organization can help participants feel better prepared to ask questions and take informed action.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Give Life Community & Advocacy', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 52 and status = 'draft';
+
+update public.blog_articles set title = 'Why Trusted Messengers Matter', slug = 'why-trusted-messengers-matter', excerpt = 'People may be more willing to ask sensitive questions in familiar community settings.', content = 'People may be more willing to ask sensitive questions in familiar community settings. Trust is built through listening and reliable information. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Community education works best when information is accurate, participation is voluntary, and people have a clear next step. Organizers can plan accessible events, invite qualified speakers for medical questions, and make room for differing perspectives. Contact information should be collected only with a clear purpose and appropriate consent.
+
+One step you can take this week: Invite trained health educators and respected community partners to collaborate.
+
+A successful outreach effort does not have to be large. A well-run conversation, useful handout, or connection to a credible organization can help participants feel better prepared to ask questions and take informed action.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Give Life Community & Advocacy', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 53 and status = 'draft';
+
+update public.blog_articles set title = 'Ways Faith Communities Can Support Health Education', slug = 'ways-faith-communities-can-support-health-education', excerpt = 'Faith organizations can offer meeting space and community connections for voluntary educational events.', content = 'Faith organizations can offer meeting space and community connections for voluntary educational events. Partnerships should inform, never pressure. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Community education works best when information is accurate, participation is voluntary, and people have a clear next step. Organizers can plan accessible events, invite qualified speakers for medical questions, and make room for differing perspectives. Contact information should be collected only with a clear purpose and appropriate consent.
+
+One step you can take this week: Explore an informational session that respects different beliefs and decisions.
+
+A successful outreach effort does not have to be large. A well-run conversation, useful handout, or connection to a credible organization can help participants feel better prepared to ask questions and take informed action.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Give Life Community & Advocacy', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 54 and status = 'draft';
+
+update public.blog_articles set title = 'Bringing Give Life Education to Schools and Campuses', slug = 'bringing-give-life-education-to-schools-and-campuses', excerpt = 'Schools and colleges can create age-appropriate opportunities to discuss health literacy and community service.', content = 'Schools and colleges can create age-appropriate opportunities to discuss health literacy and community service. Young people benefit from reliable information and space for questions. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Community education works best when information is accurate, participation is voluntary, and people have a clear next step. Organizers can plan accessible events, invite qualified speakers for medical questions, and make room for differing perspectives. Contact information should be collected only with a clear purpose and appropriate consent.
+
+One step you can take this week: Work with educators to define learning goals and approved materials.
+
+A successful outreach effort does not have to be large. A well-run conversation, useful handout, or connection to a credible organization can help participants feel better prepared to ask questions and take informed action.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Give Life Community & Advocacy', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 55 and status = 'draft';
+
+update public.blog_articles set title = 'What Makes a Helpful Community Resource Table?', slug = 'what-makes-a-helpful-community-resource-table', excerpt = 'An effective resource table provides clear takeaways, reputable sources, and a way to ask follow-up questions.', content = 'An effective resource table provides clear takeaways, reputable sources, and a way to ask follow-up questions. The goal is meaningful engagement, not collecting as many names as possible. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Community education works best when information is accurate, participation is voluntary, and people have a clear next step. Organizers can plan accessible events, invite qualified speakers for medical questions, and make room for differing perspectives. Contact information should be collected only with a clear purpose and appropriate consent.
+
+One step you can take this week: Prepare concise handouts and a voluntary contact option.
+
+A successful outreach effort does not have to be large. A well-run conversation, useful handout, or connection to a credible organization can help participants feel better prepared to ask questions and take informed action.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Give Life Community & Advocacy', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 56 and status = 'draft';
+
+update public.blog_articles set title = 'Becoming a Give Life Ambassador', slug = 'becoming-a-give-life-ambassador', excerpt = 'Ambassadors can support outreach by sharing approved resources and connecting neighbors with educational opportunities.', content = 'Ambassadors can support outreach by sharing approved resources and connecting neighbors with educational opportunities. Good advocacy begins with accurate information and respect. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Community education works best when information is accurate, participation is voluntary, and people have a clear next step. Organizers can plan accessible events, invite qualified speakers for medical questions, and make room for differing perspectives. Contact information should be collected only with a clear purpose and appropriate consent.
+
+One step you can take this week: Ask The Providers Group about ambassador training and volunteer expectations.
+
+A successful outreach effort does not have to be large. A well-run conversation, useful handout, or connection to a credible organization can help participants feel better prepared to ask questions and take informed action.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Give Life Community & Advocacy', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 57 and status = 'draft';
+
+update public.blog_articles set title = 'Planning a Kidney Health Awareness Event', slug = 'planning-a-kidney-health-awareness-event', excerpt = 'A focused event can explain risk factors, encourage informed questions, and connect attendees to credible resources.', content = 'A focused event can explain risk factors, encourage informed questions, and connect attendees to credible resources. An educational event should not be presented as a medical screening unless qualified services are arranged. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Community education works best when information is accurate, participation is voluntary, and people have a clear next step. Organizers can plan accessible events, invite qualified speakers for medical questions, and make room for differing perspectives. Contact information should be collected only with a clear purpose and appropriate consent.
+
+One step you can take this week: Choose a theme, qualified speakers, accessibility needs, and a follow-up plan.
+
+A successful outreach effort does not have to be large. A well-run conversation, useful handout, or connection to a credible organization can help participants feel better prepared to ask questions and take informed action.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Give Life Community & Advocacy', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 58 and status = 'draft';
+
+update public.blog_articles set title = 'Partnering With Local Organizations for Greater Reach', slug = 'partnering-with-local-organizations-for-greater-reach', excerpt = 'Schools, nonprofits, clinics, and community groups may bring complementary strengths to outreach.', content = 'Schools, nonprofits, clinics, and community groups may bring complementary strengths to outreach. Strong partnerships are built on clarity and mutual benefit. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Community education works best when information is accurate, participation is voluntary, and people have a clear next step. Organizers can plan accessible events, invite qualified speakers for medical questions, and make room for differing perspectives. Contact information should be collected only with a clear purpose and appropriate consent.
+
+One step you can take this week: Define shared goals, responsibilities, and how success will be measured.
+
+A successful outreach effort does not have to be large. A well-run conversation, useful handout, or connection to a credible organization can help participants feel better prepared to ask questions and take informed action.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Give Life Community & Advocacy', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 59 and status = 'draft';
+
+update public.blog_articles set title = 'Keeping Community Conversations Going After an Event', slug = 'keeping-community-conversations-going-after-an-event', excerpt = 'Follow-up resources and optional future invitations can extend the value of a single event.', content = 'Follow-up resources and optional future invitations can extend the value of a single event. A lasting relationship starts with respecting people''s choices. This Give Life Journal article offers a practical starting point for learning and discussion, not a diagnosis or a substitute for professional advice.
+
+Community education works best when information is accurate, participation is voluntary, and people have a clear next step. Organizers can plan accessible events, invite qualified speakers for medical questions, and make room for differing perspectives. Contact information should be collected only with a clear purpose and appropriate consent.
+
+One step you can take this week: Offer a relevant guide and obtain explicit permission before sending ongoing emails.
+
+A successful outreach effort does not have to be large. A well-run conversation, useful handout, or connection to a credible organization can help participants feel better prepared to ask questions and take informed action.
+
+Learn more: The Providers Group: Give Life Initiative — give-life.html
+
+Educational note: This article provides general information only. It is not medical advice, diagnosis, treatment, or individualized transplant guidance. Consult a qualified healthcare professional about personal health decisions.', category = 'Give Life Community & Advocacy', author = 'The Providers Group', status = 'draft', updated_at = now() where rotation_order = 60 and status = 'draft';
+
+commit;
