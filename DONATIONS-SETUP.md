@@ -1,15 +1,27 @@
-# Donations setup (PayPal and/or Stripe)
+# Donation checkout setup
 
-The Providers Group must own the payment account, its bank connection, and all funds. The website does not process card details.
+The Providers Group must own the Stripe account, its bank connection, and all funds. This static GitHub Pages website links directly to hosted checkout; it never collects or stores card details and needs no backend or API keys.
 
-1. **PayPal:** Client creates a Donate button at https://www.paypal.com/donate/buttons and copies the LIVE hosted donation URL.
-2. **Stripe:** Client creates a donation Payment Link in its Stripe Dashboard (prefer customer-chosen donation amount, and choose recurring options only if configured). Copy the LIVE payment link.
-3. Edit `donation-config.js`, entering one or both HTTPS URLs. Do not put API keys in this file.
-4. Deploy the updated static site to GitHub Pages. Test each link and confirm the payment destination shows the correct organization before taking real donations.
-5. Until URLs are configured, the page displays 'not yet enabled' and links to the Contact page; it will not pretend donations work.
+## Configure the payment link
 
-When one provider is configured, primary Donate Now buttons open its hosted payment page in a new tab. When both are configured, primary Donate Now buttons scroll to the two-provider selection.
+1. In the organization's Stripe Dashboard, create a Payment Link using **Customers choose what to pay**. Select the currency and any suggested or minimum amount appropriate for donations. Confirm donors can enter their own amount on hosted checkout. The website does not set the amount.
+2. Configure the organization's identity, branding, payment methods, receipt emails, and checkout confirmation in Stripe. Keep required checkout disclosures. Confirm legal charitable/tax status before claiming gifts are tax-deductible.
+3. First create and verify a link in Stripe's test environment. Confirm the organization, currency, amount selection, successful and declined test payments, receipt settings, and confirmation behavior. Use Stripe's test payment details only in test mode; do not enter real card details there.
+4. Create and verify the corresponding live Payment Link before accepting donations. Copy the full organization-owned HTTPS link from the Dashboard into `stripeUrl` in `donation-config.js`. Leave it blank until verified. Never put secret or publishable API keys in this file; only the public payment URL belongs here.
+5. Review and test the changes on `donation-page-updates`. Publishing to GitHub Pages is a separate, approved release step; this task does not publish or change `main`. Do not release a test-mode link as the live donation destination.
 
-**Supabase dashboard:** Payment links alone do NOT create verified donation rows in Supabase. To report completed donations in the admin dashboard, implement verified Stripe/PayPal webhooks in a Supabase Edge Function with idempotent transaction storage. Do not trust browser redirects as proof of payment.
+Stripe instructions: [Accept donations with Payment Links](https://support.stripe.com/questions/how-to-accept-donations-through-stripe?locale=en-US) and [test payment details](https://docs.stripe.com/testing).
 
-**Receipts and eligibility:** Configure donation acknowledgements/receipts in the payment provider. Confirm the client's legal charitable/tax status before claiming gifts are tax-deductible.
+## Website behavior and checks
+
+- There is one visible **Donate Now** control in the donation section. When configured, it opens hosted checkout in the same tab. Donors choose their amount there and can use the browser Back button to return.
+- `donations.js` reuses HTTPS hostname validation. Only `donate.stripe.com`, `buy.stripe.com`, and `checkout.stripe.com` are accepted, with a non-root path and no embedded credentials or nonstandard port. Prefer a reusable Payment Link; individual Checkout Session URLs may expire.
+- URL validation is a safety filter, not proof that a link is active, belongs to the organization, or permits a donor-chosen amount. An administrator must verify those properties in Stripe and on checkout before release, and replace or clear deactivated links.
+- With missing or rejected configuration, JavaScript disabled, or scripts unavailable, **Donate Now** remains a native disabled button. It has no checkout destination. Visitors see the usual donation copy and contact link, without provider names or setup messages.
+- Test a valid test-mode link, then clear it and test blank, malformed, HTTP, and unrelated-domain values. Check that only the approved HTTPS link enables checkout. Confirm desktop/mobile layout, keyboard navigation, and existing navigation/footer links.
+
+## Current configuration and limitations
+
+`stripeUrl` is intentionally blank: no verified payment link was provided. An administrator must complete the setup above to enable online checkout. No real payment has been tested as part of this implementation.
+
+Hosted Payment Links do not create verified donation records in Supabase or the admin dashboard. Those integrations are unchanged. Do not treat a browser redirect as proof of payment; any future transaction reporting needs separately scoped, verified server-side events and idempotent storage.

@@ -1,5 +1,5 @@
-// Client-owned hosted donation URLs. Leave blank until verified and tested.
+// Organization-owned Stripe Payment Link. Leave blank until verified and tested.
+// Public HTTPS URL only; never add API keys. See DONATIONS-SETUP.md.
 window.TPG_DONATIONS = {
-  paypalUrl: "", // e.g. https://www.paypal.com/donate/?hosted_button_id=...
-  stripeUrl: ""  // e.g. https://donate.stripe.com/... or https://buy.stripe.com/...
+  stripeUrl: ""
 };
