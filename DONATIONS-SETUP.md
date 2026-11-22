@@ -22,6 +22,6 @@ Stripe instructions: [Accept donations with Payment Links](https://support.strip
 
 ## Current configuration and limitations
 
-`stripeUrl` is intentionally blank: no verified payment link was provided. An administrator must complete the setup above to enable online checkout. No real payment has been tested as part of this implementation.
+`stripeUrl` is configured with the organization-supplied Payment Link: `https://buy.stripe.com/fZuaEXbFhgDs9RsedpdIA00`. Clicking **Donate Now** was verified to open checkout titled **The Providers' Group Inc.**, with a visible, editable donor-chosen amount field that accepted a test amount. No personal information or card details were entered, and no payment was submitted. Successful/declined payments and receipts still require separate verification in Stripe's test environment.
 
 Hosted Payment Links do not create verified donation records in Supabase or the admin dashboard. Those integrations are unchanged. Do not treat a browser redirect as proof of payment; any future transaction reporting needs separately scoped, verified server-side events and idempotent storage.
