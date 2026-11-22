@@ -8,7 +8,15 @@ function fmt(d){if(!d)return '';return new Intl.DateTimeFormat('en-US',{year:'nu
 function safeBody(text){return esc(text||'').split(/\n\s*\n/).filter(Boolean).map(p=>`<p>${p.replace(/\n/g,'<br>')}</p>`).join('')}
 async function loadBlog(){const status=document.querySelector('#blog-status');if(!status)return;if(!configured){status.textContent='Connect this site to The Providers Group Supabase project to display the article library.';return}
  const {data,error}=await sb.from('blog_articles').select('id,title,slug,excerpt,featured_image_url,category,author,rotation_order,original_publish_date').eq('status','approved').order('rotation_order');
- if(error){status.textContent='The article library could not be loaded.';return} if(!data?.length){status.textContent='The article library is ready. Add approved articles in the admin dashboard to begin the rotation.';return}
+if (error) {
+    status.textContent = 'Please check back shortly.';
+    return;
+}
+
+if (!data?.length) {
+    status.textContent = 'New articles are coming soon.';
+    return;
+}
  const order=rotationOrder(); const featured=data.find(a=>a.rotation_order===order)||data[0]; status.textContent='';
  const box=document.querySelector('#featured-article');box.hidden=false;document.querySelector('#featured-title').textContent=featured.title;document.querySelector('#featured-excerpt').textContent=featured.excerpt||'';document.querySelector('#featured-meta').textContent=[featured.category,featured.author].filter(Boolean).join(' · ');document.querySelector('#featured-link').href='article.html?slug='+encodeURIComponent(featured.slug);const fi=document.querySelector('#featured-image');if(featured.featured_image_url){fi.src=featured.featured_image_url;fi.alt='Featured image for '+featured.title;fi.hidden=false}
  const cats=[...new Set(data.map(x=>x.category).filter(Boolean))].sort();const sel=document.querySelector('#blog-category');cats.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;sel.appendChild(o)});
