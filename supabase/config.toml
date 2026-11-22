@@ -1,0 +1,9 @@
+# Local CLI identifier; remote deployments use the explicit --project-ref in the deployment instructions.
+project_id = "providers-group-website"
+
+# Only this webhook bypasses Supabase JWT verification. Stripe HMAC verification is mandatory in code.
+[functions.stripe-webhook]
+verify_jwt = false
+
+[functions.stripe-donation-import]
+verify_jwt = true
